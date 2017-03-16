@@ -1,0 +1,31 @@
+.best-hero-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.best-hero{
+    width: 20%;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    color: #607d8b;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #EEE;
+    border: 1px solid #607d8b;
+    margin: 30px;
+    border-radius: 10px;
+    float: left;    
+}
+.best-hero:hover{
+    cursor: pointer;
+}
+.best-hero-picture{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+    border-radius: 50px;
+}

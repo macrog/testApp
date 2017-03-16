@@ -1,0 +1,10 @@
+<div class="best-hero-text">Top 4 Heroes of all time</div>
+<div *ngFor="let hero of bestHeroes">
+    <div class="best-hero" (click)="onSelect(hero)">{{hero.name}}
+        <div>
+            <img class="best-hero-picture" [src]="hero.picUrl">
+        </div>
+    </div>
+</div>
+
+<my-hero-details [hero]="selectedHero"></my-hero-details>
