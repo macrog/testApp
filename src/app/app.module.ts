@@ -8,7 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailsComponent } from './heroDetails/hero-details.component';
 import { HeroService } from './services/hero.service';
-import { routing } from './app.routes';
+import { AppRoutes } from './app.routes';
 import {TabMenuModule } from 'primeng/primeng';
 
 @NgModule({
@@ -19,10 +19,10 @@ import {TabMenuModule } from 'primeng/primeng';
     HeroDetailsComponent
   ],
   imports: [
+    AppRoutes,
     BrowserModule,
     FormsModule,
-    HttpModule,
-    routing,
+    HttpModule,    
     TabMenuModule
   ],
   providers: [HeroService],
