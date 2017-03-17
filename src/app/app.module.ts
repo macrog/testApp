@@ -9,6 +9,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailsComponent } from './heroDetails/hero-details.component';
 import { HeroService } from './services/hero.service';
 import { routing } from './app.routes';
+import {TabMenuModule } from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { routing } from './app.routes';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    TabMenuModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]

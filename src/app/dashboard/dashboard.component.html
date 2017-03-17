@@ -1,9 +1,11 @@
-<div class="best-hero-text">Top 4 Heroes of all time</div>
-<div *ngFor="let hero of bestHeroes">
-    <div class="best-hero" (click)="onSelect(hero)">{{hero.name}}
-        <div>
-            <img class="best-hero-picture" [src]="hero.picUrl">
+<div class="best-hero-text">TOP 4 HEROES OF ALL TIME</div>
+<div class="ui-g-12 ui-md-6 ui-lg-3" *ngFor="let hero of bestHeroes">
+    
+    <div class="best-hero-container" (click)="onSelect(hero)">
+        <div class="best-hero-text">
+            {{hero.name}}            
         </div>
+        <img class="best-hero-picture grow" [src]="hero.picUrl">
     </div>
 </div>
 
